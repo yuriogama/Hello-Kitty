@@ -1,0 +1,27 @@
+.hide {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    .only-mob {
+        display: none !important;
+    }
+
+    .box-sect.pad {
+        padding: 0px 3em;
+    }
+}
+
+@media (max-width: 768px) {
+    .only-desk {
+        display: none !important;
+    }
+
+    .box-sect.pad{
+        padding: 0px 25px;
+    }
+}
+
+img {
+    max-width: 100%;
+}

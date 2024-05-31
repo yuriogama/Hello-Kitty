@@ -1,0 +1,315 @@
+@media (max-width: 768px) {
+    main#mainhk {
+        margin-top: 76px;
+
+        .sect {
+            .box-sect {
+                .texts {
+                    .title {
+                        font-size: 41px !important;
+                    }
+                }
+            }
+        }
+
+        .sect.bnnr-prc {
+            .box-sect {
+                .logo-float {
+                    height: 96.5% !important;
+                }
+            }
+        }
+
+        .sect.evento {
+            margin-top: 2em;
+
+            .box-sect {
+                .texts.float-left {
+                    padding: 0 2em;
+
+                    .text {
+                        font-size: 25px;
+                        line-height: 31px;
+                    }
+
+                    .descr {
+                        font-size: 17px;
+                        line-height: 27px;
+                    }
+                }
+            }
+        }
+
+        .sect.experiencia {
+            .box-sect.pad {
+                .imgs-texts-box {
+                    flex-direction: column;
+
+                    .two,
+                    .four {
+                        flex-direction: column-reverse;
+                    }
+
+                    .item.one {
+                        margin-bottom: 15px;
+
+                        img {
+                            padding-right: 50px;
+                        }
+                    }
+
+                    .item.two {
+                        margin-bottom: 20px;
+
+                        img {
+                            padding: 0 35px;
+                        }
+                    }
+
+                    .item.three {
+                        margin-bottom: 15px;
+
+                        img {
+                            padding: 0 30px 0 20px;
+                            margin-bottom: 2em;
+                        }
+                    }
+
+                    .item.four {
+                        img {
+                            padding: 0 21px 0px 11px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sect.encontro {
+            .box-sect {
+                .box-itens {
+                    flex-direction: column;
+
+                    .left-box {
+                        .texts {
+                            padding: 25px 0;
+
+                            h3.text {
+                                font-size: 21px;
+                                text-align: center;
+                            }
+
+                            span {
+                                font-size: 17px;
+                                text-align: center;
+                                line-height: normal;
+                                display: block;
+                                margin-top: 19px;
+                            }
+                        }
+                    }
+
+                    .right-box {
+                        .box-horarios {
+                            padding-right: 9px;
+                            margin: 0 !important;
+                            padding-bottom: 0 !important;
+
+                            .horarios::-webkit-scrollbar {
+                                width: 0 !important;
+                            }
+
+                            .horarios {
+                                height: 434px !important;
+                                padding: 10px 10px 0 25px !important;
+
+                                .item {
+                                    .title {
+                                        font-size: 18px !important;
+                                    }
+
+                                    .hrs {
+                                        font-size: 12px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sect.loja {
+            .box-sect.pad {
+                .box-texts-video {
+                    flex-direction: column;
+
+                    .left-box.video {
+                        .box-svg-vid::after {
+                            background-size: 120px !important;
+                            width: 116.11px !important;
+                            bottom: 0px !important;
+                            right: -37px !important;
+                            height: 309.91px !important;
+                        }
+
+                        .box-svg-vid {
+                            #videomid {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+
+                    .right-box {
+                        .text {
+                            text-align: center;
+                            font-size: 30px;
+                        }
+
+                        .descr {
+                            text-align: center;
+                            font-size: 18px;
+                            display: block;
+                        }
+
+                        .alert-red {
+                            height: 50px !important;
+
+                            .text {
+                                text-align: center;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sect.galeria {
+            margin-top: 2em;
+
+            .box-sect.pad {
+                padding: 0 !important;
+
+                .box-insta-images {
+                    a {
+                        .item {
+                            padding: 0px 15px;
+                        }
+
+                        .slick-dots {
+                            margin-top: 20px;
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            gap: 10px;
+
+                            li.slick-active {
+                                button {
+                                    background: #CA9E72;
+                                }
+                            }
+
+                            li {
+                                button {
+                                    font-size: 0;
+                                    width: 15px;
+                                    height: 15px;
+                                    border-radius: 50%;
+                                    padding: 0;
+                                    border: 0;
+                                    background: #E3E3E3;
+                                    transition: all 0.5s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sect.onde {
+            .box-sect.pad {
+                flex-direction: column;
+
+                .box-left {
+                    .texts {
+                        h2.title {
+                            text-align: center;
+                        }
+                    }
+
+                    .box-icons {
+                        .item {
+                            width: 40%;
+                        }
+                    }
+                }
+
+                .box-right {
+                    max-width: 100%;
+                    margin-top: 3em;
+
+                    .top-local {
+                        a {
+                            font-size: 14px;
+                            padding: 12px 15px;
+                        }
+                    }
+
+                    .box-avalia {
+                        width: 85% !important;
+
+                        .item {
+                            padding-bottom: 10px !important;
+
+                            .stars {
+                                .name {
+                                    font-size: 17px !important;
+                                    margin-top: 7px;
+                                    margin-bottom: 4px;
+                                }
+
+                                .descr {
+                                    font-size: 14px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sect.saiba {
+            margin-top: 3em;
+            margin-bottom: 3em;
+
+            .box-sect.pad {
+                flex-direction: column;
+                padding: 0 !important;
+
+                .right-box {
+                    padding: 2em;
+                    padding-bottom: 0;
+
+                    .texts {
+                        h2.text {
+                            text-align: center;
+                            font-size: 38px;
+                        }
+
+                        .descr {
+                            display: block;
+                            text-align: center;
+                            font-size: 19px;
+                            margin-top: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

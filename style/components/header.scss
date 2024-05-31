@@ -1,3 +1,120 @@
-#headerhk{
+#headerhk {
+    display: flex;
+    align-items: center;
+    padding: 20px 45px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FFFFFF;
+    z-index: 99;
+    box-shadow: 0px 0px 20px -7px #000000;
 
+    .left.logo {
+        cursor: pointer;
+    }
+
+    .mid.menu {
+        width: 100%;
+
+        .box-mid {
+            ul.menu-list {
+                margin: auto;
+                display: flex;
+                padding: 0 38px;
+                list-style: none;
+                align-items: center;
+                justify-content: space-between;
+
+                @media (min-width: 768px) {
+                    max-width: 1300px;
+
+
+                    li.item::before {
+                        bottom: -10px;
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 28.25px;
+                        height: 4.75px;
+                        background-image: url(/images/bottom-hover-li-menu.png);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        opacity: 0;
+                        transition: all 0.5s;
+                    }
+
+                    li.item::after {
+                        top: -21px;
+                        right: -20px;
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 34px;
+                        height: 34px;
+                        background-image: url(/images/top-hover-li-menu.png);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        opacity: 0;
+                        transition: all 0.5s;
+                    }
+                }
+
+                li.item:hover::after {
+                    opacity: 1;
+                }
+
+                li.item:hover::before {
+                    opacity: 1;
+                }
+
+                li.item.active::before {
+                    opacity: 1;
+                }
+
+                li.item.active::after {
+                    opacity: 1;
+                }
+
+                li.item {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: vagBlack;
+                    list-style: none;
+                    color: #CA9E72;
+                    font-size: 16px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .right.btn-buy {
+        .box-buy {
+            a {
+                .btn-red-buy:hover {
+                    background: #FFFFFF;
+                    color: #D80D2A;
+                }
+
+                .btn-red-buy {
+                    font-family: vagBold;
+                    border-radius: 12px;
+                    background: #D80D2A;
+                    border: 2px solid #D80D2A;
+                    width: 200px;
+                    height: 51px;
+                    color: #FFF;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
 }

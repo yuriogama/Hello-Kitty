@@ -1,12 +1,15 @@
 //vars
+@import "../style/vars/fonts.scss";
 
 //Global
 @import "../style/pages/global.scss";
 
 //Componentes
 @import "../style/components/header.scss";
+@import "../style/components/main.scss";
 
 //RESPONSIVE
 
 //Componentes
 @import "../style/responsive/components/header.scss";
+@import "../style/responsive/components/main.scss";

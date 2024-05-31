@@ -21,6 +21,14 @@
 
 <body id="lp-kitty">
     <header id="headerhk">
+        <div class="only-mob hbgr-menu-mob" id="key-open-mob-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12" fill="none">
+                <path d="M1 1L16 1" stroke="#CA9E72" stroke-width="2" stroke-linecap="round" />
+                <path d="M1 6L16 6" stroke="#CA9E72" stroke-width="2" stroke-linecap="round" />
+                <path d="M1 11L16 11" stroke="#CA9E72" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </div>
+
         <div class="part left logo">
             <h1 class="hide">
                 Hello Kitty | A experiência imersiva mais aguardada dos últimos anos chega à América Latina pela
@@ -31,14 +39,26 @@
 
         <div class="part mid menu">
             <div class="box-mid">
+                <div class="top-menu-mob only-mob">
+                    <div class="logo">
+                        <img src="/images/logo-menu-mob.png" alt="Logo da Hello Kitty" />
+                    </div>
+
+                    <div class="close-menu" id="key-close-menu-mob">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                            <path d="M3 3L20 20" stroke="#CA9E72" stroke-width="5" stroke-linecap="round" />
+                            <path d="M20 3L3 20" stroke="#CA9E72" stroke-width="5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
                 <ul class="menu-list">
-                    <li class="item evento"> O Evento </li>
-                    <li class="item experi"> A experiência </li>
-                    <li class="item encont"> encontro </li>
-                    <li class="item lojahk"> loja </li>
-                    <li class="item galeri"> Galeria </li>
-                    <li class="item quando"> Quando e onde? </li>
-                    <li class="item saibam"> Saiba mais </li>
+                    <li class="item evento" key-scroll="key-event"> O Evento </li>
+                    <li class="item experi" key-scroll="key-xp"> A experiência </li>
+                    <li class="item encont" key-scroll="key-encntr"> encontro </li>
+                    <li class="item lojahk" key-scroll="key-loja"> loja </li>
+                    <li class="item galeri" key-scroll="key-glr"> Galeria </li>
+                    <li class="item quando" key-scroll="key-onde"> Quando e onde? </li>
+                    <li class="item saibam" key-scroll="key-saiba"> Saiba mais </li>
                 </ul>
             </div>
         </div>
@@ -57,13 +77,18 @@
     <main id="mainhk">
         <section class="sect bnnr-prc">
             <div class="box-sect">
-                <img src="/images/Banner-principal-evento.png"
-                    alt="Imagem de um criança no evento com o logo da Hello Kitty" />
+                <video loop="" autoplays="" playsinline="" muted="">
+                    <source src="/images/HK_Hero_Banner_video.mp4" />
+                </video>
+                <div class="logo-float">
+                    <img src="/images/LOGO-HK 1.png" class="only-desk" alt="logo Hello Kitty" />
+                    <img src="/images/LOGO-HK 1 (1).png" class="only-mob" alt="logo Hello Kitty" />
+                </div>
             </div>
         </section>
 
         <section class="sect evento" id="key-event">
-            <div class="box-sect pad">
+            <div class="box-sect">
                 <div class="texts float-left">
                     <span class="text">
                         A experiência imersiva mais aguardada dos últimos anos chega à América Latina pela primeira vez
@@ -76,6 +101,13 @@
                         dignissim. Donec tempus orci sit amet ipsum vehicula, at pharetra mauris mattis. Praesent nec
                         lacus ipsum. Suspendisse quis ipsum tristique, venenatis urna vitae, viverra tortor.
                     </span>
+                </div>
+
+                <div class="banner">
+                    <img src="/images/banner-bottom-evento.png" class="only-desk"
+                        alt="Imagem de crianças dentro do evento" />
+                    <img src="/images/banner-bottom-evento-mob.png" class="only-mob"
+                        alt="Imagem de crianças dentro do evento">
                 </div>
             </div>
         </section>
@@ -206,7 +238,20 @@
 
                 <div class="box-texts-video">
                     <div class="left-box video">
-                        <video src=""></video>
+                        <div class="box-svg-vid">
+                            <video id="videomid" loop="" playsinline="" muted="">
+                                <source src="/images/HK_Hero_Banner_video.mp4" />
+                            </video>
+                            <div class="svg-box" id="key-play-vd">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74"
+                                    fill="none">
+                                    <circle opacity="0.5" cx="37" cy="37" r="37" fill="#1E1E1E" />
+                                    <path
+                                        d="M47.5 35.4019C49.5 36.5566 49.5 39.4434 47.5 40.5981L34 48.3923C32 49.547 29.5 48.1036 29.5 45.7942L29.5 30.2058C29.5 27.8964 32 26.453 34 27.6077L47.5 35.4019Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="right-box">
@@ -227,37 +272,39 @@
             </div>
         </section>
 
-        <section class="sect loja" id="key-loja">
+        <section class="sect galeria" id="key-glr">
             <div class="box-sect pad">
                 <div class="texts">
                     <h2 class="title"> Galeria </h2>
 
                     <div class="inta-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                            <g clip-path="url(#clip0_26_3445)">
-                                <path
-                                    d="M18.9923 37.7851C16.2462 37.7851 13.4965 37.8765 10.7539 37.7626C6.96505 37.6059 3.73637 36.2622 1.64244 32.9077C0.670135 31.3491 0.0991736 29.6161 0.0800619 27.8047C0.0155599 21.8945 -0.0752206 15.9796 0.103951 10.073C0.222205 6.22234 2.02587 3.14678 5.5902 1.30215C7.16811 0.485482 8.88696 0.0759606 10.6417 0.0581553C16.1733 0.00355249 21.7073 -0.0451152 27.2378 0.0688385C30.7209 0.14006 33.7728 1.36981 35.9145 4.28987C37.1555 5.98375 37.8555 7.92571 37.8842 9.98162C37.9678 15.912 38.1111 21.853 37.8543 27.7738C37.6047 33.5202 33.7226 37.1536 28.3546 37.632C25.249 37.9086 22.117 37.886 18.9958 37.9988C18.9958 37.9276 18.9935 37.8552 18.9923 37.784V37.7851ZM3.27888 18.908C3.35294 21.7105 3.37802 24.5392 3.51658 27.3631C3.6205 29.482 4.31449 31.3895 6.05605 32.7783C7.40223 33.8514 9.00164 34.3024 10.6667 34.3179C16.2175 34.3713 21.7682 34.3867 27.3178 34.3143C29.5801 34.2846 31.6131 33.5154 33.0453 31.6233C34.1454 30.1692 34.499 28.4671 34.5313 26.7103C34.6077 22.5984 34.6352 18.4842 34.6388 14.3712C34.6388 12.9302 34.5695 11.4832 34.4309 10.0493C34.1968 7.63726 33.1982 5.64307 30.9622 4.44656C29.7677 3.80794 28.4537 3.55274 27.1147 3.50882C21.386 3.32008 15.6549 3.19307 9.93094 3.61209C8.07591 3.74741 6.42872 4.47386 5.18288 5.92558C4.04574 7.24911 3.58944 8.83853 3.51419 10.5205C3.38877 13.3053 3.35294 16.0936 3.27888 18.908Z"
-                                    fill="#CA9E72" />
-                                <path
-                                    d="M18.9492 28.6676C13.549 28.6498 9.16884 24.2899 9.15809 18.921C9.14733 13.5189 13.5932 9.13167 19.0532 9.1566C24.4427 9.18153 28.8204 13.5687 28.8085 18.9341C28.7965 24.3231 24.3782 28.6854 18.9492 28.6676ZM19.0149 25.2229C22.5458 25.2063 25.3708 22.3788 25.3612 18.87C25.3517 15.392 22.4658 12.5811 18.9289 12.6049C15.4267 12.6286 12.6077 15.4502 12.6161 18.9258C12.6245 22.4263 15.4841 25.2395 19.0137 25.2229H19.0149Z"
-                                    fill="#CA9E72" />
-                                <path
-                                    d="M26.9164 8.77446C26.9164 7.48655 27.9341 6.48114 29.2218 6.49776C30.4843 6.51438 31.4769 7.51385 31.4781 8.7709C31.4781 10.0291 30.4103 11.0915 29.1656 11.0702C27.9234 11.0488 26.9176 10.022 26.9176 8.77446H26.9164Z"
-                                    fill="#CA9E72" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_26_3445">
-                                    <rect width="38" height="38" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
-                        <span> @multiverso.experience </span>
+                        <a href="https://www.instagram.com/multiverso.experience/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"
+                                fill="none">
+                                <g clip-path="url(#clip0_26_3445)">
+                                    <path
+                                        d="M18.9923 37.7851C16.2462 37.7851 13.4965 37.8765 10.7539 37.7626C6.96505 37.6059 3.73637 36.2622 1.64244 32.9077C0.670135 31.3491 0.0991736 29.6161 0.0800619 27.8047C0.0155599 21.8945 -0.0752206 15.9796 0.103951 10.073C0.222205 6.22234 2.02587 3.14678 5.5902 1.30215C7.16811 0.485482 8.88696 0.0759606 10.6417 0.0581553C16.1733 0.00355249 21.7073 -0.0451152 27.2378 0.0688385C30.7209 0.14006 33.7728 1.36981 35.9145 4.28987C37.1555 5.98375 37.8555 7.92571 37.8842 9.98162C37.9678 15.912 38.1111 21.853 37.8543 27.7738C37.6047 33.5202 33.7226 37.1536 28.3546 37.632C25.249 37.9086 22.117 37.886 18.9958 37.9988C18.9958 37.9276 18.9935 37.8552 18.9923 37.784V37.7851ZM3.27888 18.908C3.35294 21.7105 3.37802 24.5392 3.51658 27.3631C3.6205 29.482 4.31449 31.3895 6.05605 32.7783C7.40223 33.8514 9.00164 34.3024 10.6667 34.3179C16.2175 34.3713 21.7682 34.3867 27.3178 34.3143C29.5801 34.2846 31.6131 33.5154 33.0453 31.6233C34.1454 30.1692 34.499 28.4671 34.5313 26.7103C34.6077 22.5984 34.6352 18.4842 34.6388 14.3712C34.6388 12.9302 34.5695 11.4832 34.4309 10.0493C34.1968 7.63726 33.1982 5.64307 30.9622 4.44656C29.7677 3.80794 28.4537 3.55274 27.1147 3.50882C21.386 3.32008 15.6549 3.19307 9.93094 3.61209C8.07591 3.74741 6.42872 4.47386 5.18288 5.92558C4.04574 7.24911 3.58944 8.83853 3.51419 10.5205C3.38877 13.3053 3.35294 16.0936 3.27888 18.908Z"
+                                        fill="#CA9E72" />
+                                    <path
+                                        d="M18.9492 28.6676C13.549 28.6498 9.16884 24.2899 9.15809 18.921C9.14733 13.5189 13.5932 9.13167 19.0532 9.1566C24.4427 9.18153 28.8204 13.5687 28.8085 18.9341C28.7965 24.3231 24.3782 28.6854 18.9492 28.6676ZM19.0149 25.2229C22.5458 25.2063 25.3708 22.3788 25.3612 18.87C25.3517 15.392 22.4658 12.5811 18.9289 12.6049C15.4267 12.6286 12.6077 15.4502 12.6161 18.9258C12.6245 22.4263 15.4841 25.2395 19.0137 25.2229H19.0149Z"
+                                        fill="#CA9E72" />
+                                    <path
+                                        d="M26.9164 8.77446C26.9164 7.48655 27.9341 6.48114 29.2218 6.49776C30.4843 6.51438 31.4769 7.51385 31.4781 8.7709C31.4781 10.0291 30.4103 11.0915 29.1656 11.0702C27.9234 11.0488 26.9176 10.022 26.9176 8.77446H26.9164Z"
+                                        fill="#CA9E72" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_26_3445">
+                                        <rect width="38" height="38" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span> @multiverso.experience </span>
+                        </a>
                     </div>
                 </div>
 
                 <div class="box-insta-images">
-                    <a href="#">
+                    <a href="https://www.instagram.com/multiverso.experience/" target="_blank">
                         <div class="item">
                             <img src="/images/banner-galery-insta-1.png"
                                 alt="Imagens do instagram @multiverso.experience" />
@@ -508,13 +555,15 @@
 
                 <div class="box-right">
                     <div class="top-local">
-                        <a href="#"> Rua Olimpíadas, 360 - Vila Olimpia, SP, São Paulo. CEP: 04551-000 </a>
+                        <a href="https://maps.app.goo.gl/CCwHEpkb7oVEbT6Q8" target="_blank">
+                            Rua Olimpíadas, 360 - Vila Olimpia, SP, São Paulo. CEP: 04551-000
+                        </a>
                     </div>
                     <div class="localidade">
                         <img src="/images/localidade-no-mapa.png"
                             alt="Local no mapa Rua Olimpíadas, 360 - Vila Olimpia, SP, São Paulo. CEP: 04551-000" />
                     </div>
-                    <div class="box-avalia">
+                    <div class="box-avalia" id="key-slk-avalia">
                         <div class="item">
                             <div class="stars">
                                 <svg width="109" height="17" viewBox="0 0 109 17" fill="none"
@@ -642,7 +691,8 @@
         <section class="sect saiba" id="key-saiba">
             <div class="box-sect pad">
                 <div class="left-box">
-                    <img src="/images/banner-lateral-newsletter.png" alt="Imagem da Hello Kitty mandando um beijo" />
+                    <img src="/images/banner-lateral-newsletter.png" class="only-desk" alt="Imagem da Hello Kitty mandando um beijo" />
+                    <img src="/images/banner-lateral-newsletter-mob.png" class="only-mob" alt="Imagem da Hello Kitty mandando um beijo" />
                 </div>
 
                 <div class="right-box">
@@ -668,7 +718,8 @@
 
     <footer id="footer">
         <div class="box-footer">
-            <img src="/images/footer-banner.png" alt="Imagem de informações" />
+            <img src="/images/footer-banner.png" class="only-desk" alt="Imagem de informações" />
+            <img src="/images/footer-banner-mob.png" class="only-mob" alt="Imagem de informações" />
         </div>
     </footer>
 

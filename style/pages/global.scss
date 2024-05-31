@@ -1,3 +1,21 @@
+body::-webkit-scrollbar-thumb {
+    border-radius: 16px;
+    background: #CA9E72;
+}
+
+body::-webkit-scrollbar {
+    width: 13px;
+    background: #ffead5;
+}
+
+* {
+    font-family: vagThin;
+}
+
+video {
+    width: 100% !important;
+}
+
 .hide {
     display: none !important;
 }
@@ -17,8 +35,8 @@
         display: none !important;
     }
 
-    .box-sect.pad{
-        padding: 0px 25px;
+    .box-sect.pad {
+        padding: 0px 2em !important;
     }
 }
 

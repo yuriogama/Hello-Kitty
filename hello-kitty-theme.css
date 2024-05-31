@@ -74,7 +74,7 @@ img {
             position: absolute;
             width: 28.25px;
             height: 4.75px;
-            background-image: url(/images/bottom-hover-li-menu.png);
+            background-image: url(/Hello-Kitty/images/bottom-hover-li-menu.png);
             background-size: cover;
             background-repeat: no-repeat;
             opacity: 0;
@@ -87,7 +87,7 @@ img {
             position: absolute;
             width: 34px;
             height: 34px;
-            background-image: url(/images/top-hover-li-menu.png);
+            background-image: url(/Hello-Kitty/images/top-hover-li-menu.png);
             background-size: cover;
             background-repeat: no-repeat;
             opacity: 0;
@@ -347,7 +347,7 @@ main#mainhk {
             position: absolute;
             width: 172.11px;
             height: 447.91px;
-            background-image: url(/images/after-video-banner.png);
+            background-image: url(/Hello-Kitty/images/after-video-banner.png);
             background-size: cover;
             background-repeat: no-repeat;
             right: -90px; }
@@ -358,7 +358,7 @@ main#mainhk {
             position: absolute;
             width: 51.06px;
             height: 116.78px;
-            background-image: url(/images/before-video-banner.png);
+            background-image: url(/Hello-Kitty/images/before-video-banner.png);
             background-size: cover;
             background-repeat: no-repeat;
             left: -23px; }
@@ -432,7 +432,7 @@ main#mainhk {
         position: absolute;
         width: 34px;
         height: 34px;
-        background-image: url(/images/top-hover-li-menu.png);
+        background-image: url(/Hello-Kitty/images/top-hover-li-menu.png);
         background-size: cover;
         background-repeat: no-repeat;
         opacity: 0;

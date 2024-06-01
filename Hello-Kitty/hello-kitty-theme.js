@@ -67,40 +67,50 @@ $("#headerhk .part.left.logo").click(function (e) {
 //determinando onde o usuário está para alterar o focus no item do header.
 $(document).scroll(function () {
     let focus = $(document).scrollTop();
-    if (focus < 900) {
+    let j = 150; 
+    let event = $("#key-event").position().top;
+    let xp = $("#key-xp").position().top;
+    let encntr = $("#key-encntr").position().top;
+    let loja = $("#key-loja").position().top;
+    let glr = $("#key-glr").position().top;
+    let onde = $("#key-onde").position().top;
+    let saiba = $("#key-saiba").position().top;
+
+
+    if (focus < event - j) {
         $("#headerhk .menu .box-mid .menu-list li.item").removeClass("active");
     }
-    if (focus > 900 && focus < 2200) {
+    if (focus > event - j && focus < xp - j) {
         $("#headerhk .menu .box-mid .menu-list li.item").removeClass("active");
         $("#headerhk .menu .box-mid .menu-list li.item.evento").addClass("active");
     }
 
-    if (focus > 2280 && focus < 2960) {
+    if (focus > xp - j && focus < encntr - j) {
         $("#headerhk .menu .box-mid .menu-list li.item").removeClass("active");
         $("#headerhk .menu .box-mid .menu-list li.item.experi").addClass("active");
     }
 
-    if (focus > 2989 && focus < 3865) {
+    if (focus > encntr - j && focus < loja - j) {
         $("#headerhk .menu .box-mid .menu-list li.item").removeClass("active");
         $("#headerhk .menu .box-mid .menu-list li.item.encont").addClass("active");
     }
 
-    if (focus > 3894 && focus < 4540) {
+    if (focus > loja - j && focus < glr - j) {
         $("#headerhk .menu .box-mid .menu-list li.item").removeClass("active");
         $("#headerhk .menu .box-mid .menu-list li.item.lojahk").addClass("active");
     }
 
-    if (focus > 4580 && focus < 5704) {
+    if (focus > glr - j && focus < onde - j) {
         $("#headerhk .menu .box-mid .menu-list li.item").removeClass("active");
         $("#headerhk .menu .box-mid .menu-list li.item.galeri").addClass("active");
     }
 
-    if (focus > 5733 && focus < 6466) {
+    if (focus > onde - j && focus < saiba - j) {
         $("#headerhk .menu .box-mid .menu-list li.item").removeClass("active");
         $("#headerhk .menu .box-mid .menu-list li.item.quando").addClass("active");
     }
 
-    if (focus > 6470) {
+    if (focus > saiba - j) {
         $("#headerhk .menu .box-mid .menu-list li.item").removeClass("active");
         $("#headerhk .menu .box-mid .menu-list li.item.saibam").addClass("active");
     }
